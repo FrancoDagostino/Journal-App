@@ -6,14 +6,7 @@ export const journalSlice = createSlice({
         isSaving:false,
         messageSaved:'',
         notes:[],
-        active:null,
-        // active:{
-        //     id:'ABC123',
-        //     title:'',
-        //     body:'',
-        //     date:1234567,
-        //     imageUrls:[], //https://foto1.jgp
-        // }
+        active:null
 
     },
     reducers: {

@@ -16,6 +16,7 @@ export const startNewNot = ()=>{
             title:'',
             body:'',
             date: new Date().getTime(),
+            imageUrls:[]
         }
 
         const newDocRef = doc(collection(FirebaseDB,`${uid}/journal/notes`));

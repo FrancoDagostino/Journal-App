@@ -16,9 +16,10 @@ export const JournalPage = () => {
     dispatch(startNewNot())
   }
   return (
+    <>
     <JournalLayout>
       {
-       active == null
+        active == null
        ?<NothingSelectedView/>
        :<NoteView/> 
       }
@@ -35,9 +36,10 @@ export const JournalPage = () => {
         }}
         onClick={onClickNewNote}
         disabled={isSaving}
-      >
+        >
         <AddOutlined sx={{fontSize:30}}/>
       </IconButton>
     </JournalLayout>
+    </>
   )
 }
